@@ -12,7 +12,7 @@ goals_go :-
 	
 
 goals_initial :-
-	run_koan('To assert the truth, one must know the facts', parent).
+	run_koan('To assert the truth, one must know the correct facts', parent).
 
 goals_equality :-
-	run_koan('Equality can be specified with use of the same name', equal).
+	run_koan('To see equality, one must remove falsehood and see the same name', equal).
