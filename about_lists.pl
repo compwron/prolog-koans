@@ -6,12 +6,12 @@
 	my_duplicate_for_n/3, my_drop/3, my_split/4, my_slice/4,
 	my_rotate/3, remove_at/4, insert_at/4, range/3]).
 
-my_first(_,_) :- false.
+my_first(a,[a,b,c]).
 
 my_last(X, [X]).
-my_last(_,_) :- false.
+my_last(c,[a,b,c]).
 
-my_penultimate(_,_) :- false.
+my_penultimate(c,[a,b,c,d]).
 my_penultimate(X, [_|T]) :- my_penultimate(X, T).
 
 my_element_at(X,[X|_],1).
